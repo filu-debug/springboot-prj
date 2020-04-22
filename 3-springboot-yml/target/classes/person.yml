@@ -1,0 +1,9 @@
+person:
+  gender: 男
+  birth: 2017/12/15
+  list: [12,true,haha]
+  map: {lisi: 李四,ww: 王五}
+  dog:
+    name: 626
+    age: 3
+  pername: yy@126.com

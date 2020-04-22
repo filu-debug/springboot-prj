@@ -1,0 +1,11 @@
+2020-04-19 20:42:13.724  INFO 13244 --- [main] com.ityy.ApplicationTests                : Starting ApplicationTests on DESKTOP-G6MOT54 with PID 13244 (started by X1YOGA in E:\WorkSpace\idea\springBoot-prj\5-springboot-slf4j)
+2020-04-19 20:42:13.726 DEBUG 13244 --- [main] com.ityy.ApplicationTests                : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-04-19 20:42:13.729  INFO 13244 --- [main] com.ityy.ApplicationTests                : No active profile set, falling back to default profiles: default
+2020-04-19 20:42:16.317  INFO 13244 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-19 20:42:16.717  INFO 13244 --- [main] com.ityy.ApplicationTests                : Started ApplicationTests in 3.92 seconds (JVM running for 5.708)
+2020-04-19 20:42:17.284 TRACE 13244 --- [main] com.ityy.ApplicationTests                : 这是trace日志。。。。
+2020-04-19 20:42:17.284 DEBUG 13244 --- [main] com.ityy.ApplicationTests                : 这是debug日志。。。。
+2020-04-19 20:42:17.284  INFO 13244 --- [main] com.ityy.ApplicationTests                : 这是info日志。。。。
+2020-04-19 20:42:17.285  WARN 13244 --- [main] com.ityy.ApplicationTests                : 这是warn日志。。。。
+2020-04-19 20:42:17.285 ERROR 13244 --- [main] com.ityy.ApplicationTests                : 这是error日志。。。。
+2020-04-19 20:42:17.301  INFO 13244 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

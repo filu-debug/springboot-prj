@@ -1,0 +1,42 @@
+{
+  "groups": [
+    {
+      "name": "person",
+      "type": "com.ityy.entity.Person",
+      "sourceType": "com.ityy.entity.Person"
+    }
+  ],
+  "properties": [
+    {
+      "name": "person.birth",
+      "type": "java.util.Date",
+      "sourceType": "com.ityy.entity.Person"
+    },
+    {
+      "name": "person.dog",
+      "type": "com.ityy.entity.Dog",
+      "sourceType": "com.ityy.entity.Person"
+    },
+    {
+      "name": "person.gender",
+      "type": "java.lang.String",
+      "sourceType": "com.ityy.entity.Person"
+    },
+    {
+      "name": "person.list",
+      "type": "java.util.List<java.lang.Object>",
+      "sourceType": "com.ityy.entity.Person"
+    },
+    {
+      "name": "person.map",
+      "type": "java.util.Map<java.lang.String,java.lang.Object>",
+      "sourceType": "com.ityy.entity.Person"
+    },
+    {
+      "name": "person.pername",
+      "type": "java.lang.String",
+      "sourceType": "com.ityy.entity.Person"
+    }
+  ],
+  "hints": []
+}

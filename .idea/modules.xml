@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/1-springboot-HelloWorld/1-springboot-HelloWorld.iml" filepath="$PROJECT_DIR$/1-springboot-HelloWorld/1-springboot-HelloWorld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2-springboot/2-springboot.iml" filepath="$PROJECT_DIR$/2-springboot/2-springboot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/3-springboot-yml/3-springboot-yml.iml" filepath="$PROJECT_DIR$/3-springboot-yml/3-springboot-yml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/4-springboot-config/4-springboot-config.iml" filepath="$PROJECT_DIR$/4-springboot-config/4-springboot-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/4-springboot-config2/4-springboot-config2.iml" filepath="$PROJECT_DIR$/4-springboot-config2/4-springboot-config2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/5-springboot-slf4j/5-springboot-slf4j.iml" filepath="$PROJECT_DIR$/5-springboot-slf4j/5-springboot-slf4j.iml" />
+      <module fileurl="file://$PROJECT_DIR$/6-springboot-crud/6-springboot-crud.iml" filepath="$PROJECT_DIR$/6-springboot-crud/6-springboot-crud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springBoot-prj.iml" filepath="$PROJECT_DIR$/springBoot-prj.iml" />
+    </modules>
+  </component>
+</project>

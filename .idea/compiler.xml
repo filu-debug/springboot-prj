@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="6-springboot-crud" />
+        <module name="4-springboot-config2" />
+        <module name="2-springboot" />
+        <module name="5-springboot-slf4j" />
+        <module name="1-springboot-HelloWorld" />
+        <module name="3-springboot-yml" />
+        <module name="4-springboot-config" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="1-springboot-HelloWorld" target="12" />
+      <module name="2-springboot" target="12" />
+      <module name="3-springboot-yml" target="12" />
+      <module name="4-springboot-config" target="12" />
+      <module name="4-springboot-config2" target="12" />
+      <module name="5-springboot-slf4j" target="12" />
+      <module name="6-springboot-crud" target="12" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="1-springboot-HelloWorld" options="-parameters" />
+      <module name="2-springboot" options="-parameters" />
+      <module name="3-springboot-yml" options="-parameters" />
+      <module name="4-springboot-config" options="-parameters" />
+      <module name="4-springboot-config2" options="-parameters" />
+      <module name="5-springboot-slf4j" options="-parameters" />
+      <module name="6-springboot-crud" options="-parameters" />
+    </option>
+  </component>
+</project>
