@@ -6,8 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="6-springboot-crud" />
         <module name="4-springboot-config2" />
+        <module name="6-springboot-crud" />
         <module name="2-springboot" />
         <module name="5-springboot-slf4j" />
         <module name="1-springboot-HelloWorld" />

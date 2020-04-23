@@ -1,12 +1,10 @@
 package com.ityy.controller;
 
 import com.fasterxml.jackson.databind.util.ObjectBuffer;
+import com.ityy.exception.UserNotExistsException;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.servlet.View;
-import org.springframework.web.servlet.ViewResolver;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Arrays;
 import java.util.Locale;
@@ -15,8 +13,13 @@ import java.util.Map;
 @Controller
 public class HelloController {
 
+    @ResponseBody
     @RequestMapping("/hello")
-    public String hello(){
+    public String hello(@RequestParam("user")String user){
+        System.out.println(111);
+        if(user.equals("aaa")){
+            throw new UserNotExistsException("用户不存在!!");
+        }
         return "hello";
     }
 
@@ -27,16 +30,4 @@ public class HelloController {
         return "success";
     }
 
-    @Bean
-    public ViewResolver myViewReserver(){
-        return new myViewResrver();
-    }
-
-    public static class myViewResrver implements ViewResolver {
-
-        @Override
-        public View resolveViewName(String s, Locale locale) throws Exception {
-            return null;
-        }
-    }
 }

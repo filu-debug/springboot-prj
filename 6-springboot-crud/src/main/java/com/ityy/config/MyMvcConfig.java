@@ -8,6 +8,9 @@ import org.springframework.boot.autoconfigure.http.HttpMessageConverters;
 import org.springframework.boot.autoconfigure.web.ResourceProperties;
 import org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration;
 import org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties;
+import org.springframework.boot.web.server.ConfigurableWebServerFactory;
+import org.springframework.boot.web.server.WebServerFactory;
+import org.springframework.boot.web.server.WebServerFactoryCustomizer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.method.support.HandlerMethodArgumentResolver;
@@ -20,6 +23,10 @@ import java.util.List;
 @Configuration
 public class MyMvcConfig implements WebMvcConfigurer {
 
+    /**
+     * 所有的WebMvcConfigurer组件都会一起起作用，我们自己的和springboot默认的。
+     * @return
+     */
     @Bean
     public WebMvcConfigurer webMvcConfigurer(){
         WebMvcConfigurer webMvcConfigurer = new WebMvcConfigurer() {
@@ -32,11 +39,14 @@ public class MyMvcConfig implements WebMvcConfigurer {
                 registry.addViewController("/main.html").setViewName("dashboard");
             }
 
-            @Override
+            /**
+             * 向容器中注册写好的拦截器
+             */
+            /*@Override
             public void addInterceptors(InterceptorRegistry registry) {
                 registry.addInterceptor(new LoginInterceptor())
                 .excludePathPatterns("/login.html","/","/user/login","/asserts/**","/webjars/**");
-            }
+            }*/
         };
         return webMvcConfigurer;
     }
@@ -48,6 +58,7 @@ public class MyMvcConfig implements WebMvcConfigurer {
     public LocaleResolver localeResolver(){
         return new MyLocalResolver();
     }
+
 
 
 }
